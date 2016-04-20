@@ -1,0 +1,19 @@
+default: &default
+      adapter: postgresql
+      encoding: unicode
+      pool: 5
+      username: postgres
+      password: saas
+      host:     localhost
+
+development:
+  <<: *default
+  database: saas_development
+
+test:
+  <<: *default
+  database: saas_test
+
+production:
+  <<: *default
+  database: saas_production
