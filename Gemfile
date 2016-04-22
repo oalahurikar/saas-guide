@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
-
-
+gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
+# Print pretty Ruby objects to visualize their structure
+ gem 'awesome_print', '~> 1.6', '>= 1.6.1'
+gem 'devise'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
 # Use postgresql as the database for Active Record

@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
+  resources :invoices
+  devise_for :users
    resources :weather_grid
-   root 'home#index'
+   root 'invoices#index'
 
 
 end
